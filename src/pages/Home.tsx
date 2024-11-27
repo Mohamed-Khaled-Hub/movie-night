@@ -36,7 +36,7 @@ const Home = () => {
 
     // useEffect for handling searching and fetching movies
     useEffect(() => {
-        document.title = 'Movie Space - Home'
+        document.title = 'Movie Night - Home'
 
         if (isFetched) {
             setHomeMovies(movies)

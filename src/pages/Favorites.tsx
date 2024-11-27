@@ -25,7 +25,7 @@ const Favorites = () => {
 
     // useEffect to check if localStorage is empty or not on load
     useEffect(() => {
-        document.title = 'Movie Space - Favorites'
+        document.title = 'Movie Night - Favorites'
 
         checkLocalStorage()
     }, [])
