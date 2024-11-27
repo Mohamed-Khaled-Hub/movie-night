@@ -1,0 +1,29 @@
+@import 'Utils.css';
+
+div.nav {
+    height: var(--nav-height);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: fixed;
+    top: 0;
+    background: light-dark(var(--l2), var(--d4));
+    border-bottom: var(--border-xs) solid light-dark(var(--l6), var(--d5));
+    z-index: var(--nav-z-index);
+
+    div.left,
+    div.right {
+        display: flex;
+        align-items: center;
+    }
+
+    div.left {
+        padding-left: var(--padding-m);
+    }
+
+    div.right {
+        gap: var(--padding-m);
+        padding-right: var(--padding-m);
+        justify-content: flex-end;
+    }
+}

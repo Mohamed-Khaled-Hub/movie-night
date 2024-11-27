@@ -1,0 +1,26 @@
+@import 'Utils.css';
+
+.button[class*='no-bg'] {
+    background: none !important;
+}
+
+.button {
+    min-height: var(--button-min-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: filter var(--duration);
+    padding: var(--padding-xs);
+    border-radius: var(--border-radius-xs);
+    background: light-dark(var(--l3), var(--d2));
+}
+
+.button:hover {
+    filter: brightness(1.1);
+}
+
+.button:active {
+    filter: brightness(0.8);
+}

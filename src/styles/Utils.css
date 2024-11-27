@@ -1,0 +1,115 @@
+/* Fonts */
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../assets/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../assets/fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Limelight';
+    src: url('../assets/fonts/Limelight.ttf');
+}
+
+/* Variables */
+:root {
+    color-scheme: light dark;
+
+    /* Dimensions */
+    --nav-height: 3.125rem;
+    --svg-width: 1.25rem;
+    --button-min-height: 1.25rem;
+    --logo-width: 8.125rem;
+    --movie-card-width: 12.5rem;
+    --movie-card-height: 21.875rem;
+    --movies-container-max-width: 78.125rem;
+    --search-input-width: 18.75rem;
+    --search-input-height: 1.875rem;
+    --loading-width: 6.25rem;
+
+    /* Padding */
+    --padding-xs: 0.3125rem;
+    --padding-s: 0.625rem;
+    --padding-m: 0.9375rem;
+
+    /* Border */
+    --border-loading: 0.3125rem;
+    --border-xs: 0.0625rem;
+
+    /* Border Radius */
+    --border-radius-xs: 0.3125rem;
+    --border-radius-s: 0.625rem;
+    --border-radius-m: 0.9375rem;
+
+    /* Aspect Ratios */
+    --movie-poster-aspect-ratio: 2 / 3;
+    --logo-aspect-ratio: 130 / 20;
+
+    /* Z-Index */
+    --nav-z-index: 999;
+
+    /* Transition Duration */
+    --loading-duration: 0.75s;
+    --duration: 0.2s;
+
+    /* Dark Palette */
+    --d1: #919191;
+    --d2: #292929;
+    --d3: #252422;
+    --d4: #151514;
+    --d5: #0a0a0a;
+
+    /* Light Palette */
+    --l1: #ffffff;
+    --l2: #f5f5f5;
+    --l3: #d6d6d6;
+    --l4: #c2c2c2;
+    --l5: #adadad;
+    --l6: #999999;
+
+    /* Common Palette */
+    --c1: #e51022;
+    --c2: #9d0806;
+    --c3: #6b0504;
+    --c4: #e54510;
+    --c5: #a3320b;
+    --c6: #722308;
+    --c7: #e6af2e;
+    --c8: #c99418;
+    --c9: #433723;
+}
+
+/* Classes */
+.svg-standard {
+    width: var(--svg-width);
+    min-width: var(--svg-width);
+}
+
+.logo {
+    width: var(--logo-width);
+    min-width: var(--logo-width);
+    aspect-ratio: var(--logo-aspect-ratio);
+}
+
+/* Normalization */
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}

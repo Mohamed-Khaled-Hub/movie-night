@@ -1,0 +1,30 @@
+@import 'Utils.css';
+
+div.loading {
+    width: var(--loading-width);
+    height: var(--loading-width);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.loading::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--loading-width) / 2);
+    height: calc(var(--loading-width) / 2);
+    border: var(--border-loading) solid transparent;
+    border-top: var(--border-loading) solid light-dark(var(--d5), var(--l1));
+    border-radius: 50%;
+    animation: loading var(--loading-duration) ease-in-out infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}

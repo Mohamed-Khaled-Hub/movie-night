@@ -1,0 +1,6 @@
+@import 'Utils.css';
+
+div.main {
+    padding: var(--padding-m) var(--padding-m) 0;
+    margin-top: var(--nav-height);
+}

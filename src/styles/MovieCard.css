@@ -1,0 +1,59 @@
+@import 'Utils.css';
+
+div.movie-card {
+    height: var(--movie-card-height);
+    width: var(--movie-card-width);
+    border-radius: var(--border-radius-s);
+    background: light-dark(var(--l1), var(--d5));
+    border: var(--border-xs) solid light-dark(var(--l6), transparent);
+    display: flex;
+    flex-direction: column;
+
+    div.top {
+        padding: var(--padding-s) var(--padding-s) 0;
+
+        div.poster {
+            width: 100%;
+            aspect-ratio: var(--movie-poster-aspect-ratio);
+            border-radius: var(--border-radius-xs);
+            position: relative;
+            overflow: hidden;
+
+            img.movie-poster {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .button {
+                position: absolute;
+                top: var(--padding-xs);
+                right: var(--padding-xs);
+            }
+        }
+    }
+
+    div.bottom {
+        padding: var(--padding-s);
+
+        p.title {
+            font-family: 'Lato Bold', sans-serif;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        div.movie-info {
+            display: flex;
+            justify-content: space-between;
+
+            p.released {
+                filter: opacity(0.4);
+            }
+
+            p.rating {
+                filter: opacity(0.6);
+            }
+        }
+    }
+}

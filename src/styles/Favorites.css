@@ -1,0 +1,7 @@
+@import 'Utils.css';
+
+div.favorites {
+    h1 {
+        filter: opacity(0.5);
+    }
+}

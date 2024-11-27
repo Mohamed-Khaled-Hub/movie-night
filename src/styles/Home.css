@@ -1,0 +1,26 @@
+@import 'Utils.css';
+
+div.home {
+    form#search-form {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--padding-s);
+
+        input#search-input {
+            height: var(--search-input-height);
+            border: none;
+            outline: none;
+            width: var(--search-input-width);
+            max-width: 45%;
+            border-radius: var(--border-radius-xs);
+            padding: 0 calc(var(--padding-xs) + 0.25rem);
+            background: light-dark(var(--l3), var(--d3));
+
+            &::placeholder {
+                filter: opacity(0.5);
+            }
+        }
+    }
+}
