@@ -1,6 +1,6 @@
 export const useApi = () => {
-    const API_KEY = '6b4dccd5f45b47153b61c9fbf022932b'
-    const BASE_URL = 'https://api.themoviedb.org/3'
+    const API_KEY = import.meta.env.VITE_API_KEY
+    const BASE_URL = import.meta.env.VITE_BASE_URL
 
     const moviePosterUrl = (poster_path: string) => {
         return `https://image.tmdb.org/t/p/w500${poster_path}`

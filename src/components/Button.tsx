@@ -18,7 +18,7 @@ const Button = ({ type, children, to, onClick, noBg }: ButtonProps) => {
             {type === 'button' && (
                 <button
                     onClick={onClick}
-                    className={'button' + (noBg ? ' -no-bg' : '')}
+                    className={'button' + (noBg ? ' no-bg' : '')}
                 >
                     {children}
                 </button>
